@@ -1,0 +1,42 @@
+Тестирование начато: Mon Mar 31 03:45:14 MSK 2025
+Параметры системы:
+Доступные ядра процессора: 20
+Количество задач: 10000
+Итерации прогрева: 2
+Тестовые итерации: 4
+
+=== Результаты базового теста производительности ===
+CustomThreadPoolWithSpareThread: 1437 ms
+CustomThreadPoolWithoutSpareThreadTime: 2769 ms
+ThreadPoolExecutor: 2670 ms
+Tomcat ThreadPool: 2661 ms
+Jetty ThreadPool: 1334 ms
+
+=== Тест под высокой нагрузкой ===
+CustomThreadPoolWithSpareThread: 2435 ms
+CustomThreadPoolWithoutSpareThread: 2362 ms
+ThreadPoolExecutor: 4770 ms
+Tomcat ThreadPool: 4714 ms
+Jetty ThreadPool: 2403 ms
+
+=== Тест с длительными задачами ===
+CustomThreadPoolWithSpareThread: 2763 ms
+CustomThreadPoolWithoutSpareThread: 5531 ms
+ThreadPoolExecutor: 5535 ms
+Tomcat ThreadPool: 5540 ms
+Jetty ThreadPool: 2771 ms
+
+=== Тест с короткоживущими задачами ===
+CustomThreadPoolWithSpareThread: 33 ms
+CustomThreadPoolWithoutSpareThread: 32 ms
+ThreadPoolExecutor: 6 ms
+Tomcat ThreadPool: 4 ms
+Jetty ThreadPool: 6 ms
+
+=== Тест использования памяти ===
+CustomThreadPoolWithSpareThread: 903 KB
+CustomThreadPoolWithoutSpareThread: 1083 KB
+ThreadPoolExecutor memory: 451 KB
+Tomcat ThreadPool memory: 511 KB
+Jetty ThreadPool memory: 622 KB
+Тестирование завершено: Mon Mar 31 03:47:22 MSK 2025
