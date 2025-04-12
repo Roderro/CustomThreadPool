@@ -115,7 +115,7 @@ public class CustomThreadPool implements CustomExecutor {
 
     public void addTaskInRejectQueue(Runnable command) {
         rejectedTasksQueue.add(command);
-        if (rejectedTasksQueue.size() > 1000) {
+        if (rejectedTasksQueue.size() % 1000 == 0 && !rejectedTasksQueue.isEmpty()) {
             logger.warn("Rejected tasks queue size: {} ", rejectedTasksQueue.size());
         }
     }

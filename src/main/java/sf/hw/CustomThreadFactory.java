@@ -16,8 +16,4 @@ public class CustomThreadFactory implements ThreadFactory {
         logger.debug("Creating new thread: {}", thread.getName());
         return thread;
     }
-
-    private static void log(String message) {
-        System.out.println(message);
-    }
 }
